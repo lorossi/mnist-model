@@ -1,0 +1,6 @@
+.venv
+.vscode
+*.keras
+*.json
+*.npy
+mnist_bayesian/*

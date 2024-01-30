@@ -1,0 +1,41 @@
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input (InputLayer)          [(None, 28, 28, 1)]       0
+
+ batch_normalization (Batch  (None, 28, 28, 1)         4
+ Normalization)
+
+ conv_1 (Conv2D)             (None, 28, 28, 256)       12800
+
+ max_pool_1 (MaxPooling2D)   (None, 14, 14, 256)       0
+
+ batch_norm_1 (BatchNormali  (None, 14, 14, 256)       1024
+ zation)
+
+ conv_2 (Conv2D)             (None, 14, 14, 256)       3211520
+
+ max_pool_2 (MaxPooling2D)   (None, 7, 7, 256)         0
+
+ batch_norm_2 (BatchNormali  (None, 7, 7, 256)         1024
+ zation)
+
+ conv_3 (Conv2D)             (None, 7, 7, 32)          204832
+
+ max_pool_3 (MaxPooling2D)   (None, 3, 3, 32)          0
+
+ batch_norm_3 (BatchNormali  (None, 3, 3, 32)          128
+ zation)
+
+ flatten (Flatten)           (None, 288)               0
+
+ dense_1 (Dense)             (None, 64)                18496
+
+ dropout (Dropout)           (None, 64)                0
+
+ dense_out (Dense)           (None, 10)                650
+
+=================================================================
+Total params: 3450478 (13.16 MB)
+Trainable params: 3449388 (13.16 MB)
+Non-trainable params: 1090 (4.26 KB)
+_________________________________________________________________
