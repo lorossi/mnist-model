@@ -368,7 +368,9 @@ The model reached the following **metrics**:
 | Recall   | 0.9325525142297636 |
 | F1       | 0.9326716334433696 |
 
-With a whopping improvement of *-5.09%* (yes, **negative**) in accuracy over the convolutional model. So yeah, **a simpler model would have worked**.
+The overall accuracy is not that bad *(93.3%, or about 5.09% less than the best model)*, but still **more than acceptable**. Furthermore, creating and training this model took me **less than 20 minutes** *(nothing, compared to the WEEK it took for the best model)*.
+
+So yes, **a simpler model would have worked**.
 
 ## Credits
 
